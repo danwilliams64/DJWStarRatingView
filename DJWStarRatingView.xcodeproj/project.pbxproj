@@ -10,17 +10,18 @@
 		0E1B4D5218F989C2006F23D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1B4D5118F989C2006F23D4 /* Foundation.framework */; };
 		0E1B4D5418F989C2006F23D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1B4D5318F989C2006F23D4 /* CoreGraphics.framework */; };
 		0E1B4D5618F989C2006F23D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1B4D5518F989C2006F23D4 /* UIKit.framework */; };
-		0E1B4D5C18F989C2006F23D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E1B4D5A18F989C2006F23D4 /* InfoPlist.strings */; };
-		0E1B4D5E18F989C2006F23D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1B4D5D18F989C2006F23D4 /* main.m */; };
-		0E1B4D6218F989C2006F23D4 /* DJWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1B4D6118F989C2006F23D4 /* DJWAppDelegate.m */; };
-		0E1B4D6518F989C2006F23D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1B4D6318F989C2006F23D4 /* Main.storyboard */; };
-		0E1B4D6818F989C2006F23D4 /* DJWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1B4D6718F989C2006F23D4 /* DJWViewController.m */; };
-		0E1B4D6A18F989C2006F23D4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E1B4D6918F989C2006F23D4 /* Images.xcassets */; };
 		0E1B4D7118F989C2006F23D4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1B4D7018F989C2006F23D4 /* XCTest.framework */; };
 		0E1B4D7218F989C2006F23D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1B4D5118F989C2006F23D4 /* Foundation.framework */; };
 		0E1B4D7318F989C2006F23D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1B4D5518F989C2006F23D4 /* UIKit.framework */; };
 		0E1B4D7B18F989C2006F23D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E1B4D7918F989C2006F23D4 /* InfoPlist.strings */; };
 		0E1B4D7D18F989C2006F23D4 /* DJWStarRatingViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1B4D7C18F989C2006F23D4 /* DJWStarRatingViewTests.m */; };
+		0E1B4D8818F989E8006F23D4 /* DJWStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1B4D8718F989E8006F23D4 /* DJWStarRatingView.m */; };
+		37CD7691193522A4002F9BBF /* DJWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CD7688193522A4002F9BBF /* DJWAppDelegate.m */; };
+		37CD7692193522A4002F9BBF /* DJWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CD768A193522A4002F9BBF /* DJWViewController.m */; };
+		37CD7693193522A4002F9BBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CD768D193522A4002F9BBF /* main.m */; };
+		37CD7694193522A4002F9BBF /* DJWStarRatingView-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37CD768F193522A4002F9BBF /* DJWStarRatingView-Info.plist */; };
+		37CD7695193522A4002F9BBF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37CD7690193522A4002F9BBF /* Images.xcassets */; };
+		37CD769819352376002F9BBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37CD769619352376002F9BBF /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,21 +39,22 @@
 		0E1B4D5118F989C2006F23D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0E1B4D5318F989C2006F23D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0E1B4D5518F989C2006F23D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		0E1B4D5918F989C2006F23D4 /* DJWStarRatingView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DJWStarRatingView-Info.plist"; sourceTree = "<group>"; };
-		0E1B4D5B18F989C2006F23D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0E1B4D5D18F989C2006F23D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0E1B4D5F18F989C2006F23D4 /* DJWStarRatingView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DJWStarRatingView-Prefix.pch"; sourceTree = "<group>"; };
-		0E1B4D6018F989C2006F23D4 /* DJWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJWAppDelegate.h; sourceTree = "<group>"; };
-		0E1B4D6118F989C2006F23D4 /* DJWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJWAppDelegate.m; sourceTree = "<group>"; };
-		0E1B4D6418F989C2006F23D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0E1B4D6618F989C2006F23D4 /* DJWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJWViewController.h; sourceTree = "<group>"; };
-		0E1B4D6718F989C2006F23D4 /* DJWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJWViewController.m; sourceTree = "<group>"; };
-		0E1B4D6918F989C2006F23D4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0E1B4D6F18F989C2006F23D4 /* DJWStarRatingViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DJWStarRatingViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E1B4D7018F989C2006F23D4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		0E1B4D7818F989C2006F23D4 /* DJWStarRatingViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DJWStarRatingViewTests-Info.plist"; sourceTree = "<group>"; };
 		0E1B4D7A18F989C2006F23D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0E1B4D7C18F989C2006F23D4 /* DJWStarRatingViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJWStarRatingViewTests.m; sourceTree = "<group>"; };
+		0E1B4D8618F989E8006F23D4 /* DJWStarRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJWStarRatingView.h; sourceTree = "<group>"; };
+		0E1B4D8718F989E8006F23D4 /* DJWStarRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJWStarRatingView.m; sourceTree = "<group>"; };
+		37CD7687193522A4002F9BBF /* DJWAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJWAppDelegate.h; sourceTree = "<group>"; };
+		37CD7688193522A4002F9BBF /* DJWAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJWAppDelegate.m; sourceTree = "<group>"; };
+		37CD7689193522A4002F9BBF /* DJWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJWViewController.h; sourceTree = "<group>"; };
+		37CD768A193522A4002F9BBF /* DJWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJWViewController.m; sourceTree = "<group>"; };
+		37CD768C193522A4002F9BBF /* DJWStarRatingView-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DJWStarRatingView-Prefix.pch"; sourceTree = "<group>"; };
+		37CD768D193522A4002F9BBF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		37CD768F193522A4002F9BBF /* DJWStarRatingView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DJWStarRatingView-Info.plist"; sourceTree = "<group>"; };
+		37CD7690193522A4002F9BBF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		37CD769719352376002F9BBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		0E1B4D4518F989C2006F23D4 = {
 			isa = PBXGroup;
 			children = (
+				37CD768519352297002F9BBF /* Example */,
 				0E1B4D5718F989C2006F23D4 /* DJWStarRatingView */,
 				0E1B4D7618F989C2006F23D4 /* DJWStarRatingViewTests */,
 				0E1B4D5018F989C2006F23D4 /* Frameworks */,
@@ -112,26 +115,10 @@
 		0E1B4D5718F989C2006F23D4 /* DJWStarRatingView */ = {
 			isa = PBXGroup;
 			children = (
-				0E1B4D6018F989C2006F23D4 /* DJWAppDelegate.h */,
-				0E1B4D6118F989C2006F23D4 /* DJWAppDelegate.m */,
-				0E1B4D6318F989C2006F23D4 /* Main.storyboard */,
-				0E1B4D6618F989C2006F23D4 /* DJWViewController.h */,
-				0E1B4D6718F989C2006F23D4 /* DJWViewController.m */,
-				0E1B4D6918F989C2006F23D4 /* Images.xcassets */,
-				0E1B4D5818F989C2006F23D4 /* Supporting Files */,
+				0E1B4D8618F989E8006F23D4 /* DJWStarRatingView.h */,
+				0E1B4D8718F989E8006F23D4 /* DJWStarRatingView.m */,
 			);
 			path = DJWStarRatingView;
-			sourceTree = "<group>";
-		};
-		0E1B4D5818F989C2006F23D4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0E1B4D5918F989C2006F23D4 /* DJWStarRatingView-Info.plist */,
-				0E1B4D5A18F989C2006F23D4 /* InfoPlist.strings */,
-				0E1B4D5D18F989C2006F23D4 /* main.m */,
-				0E1B4D5F18F989C2006F23D4 /* DJWStarRatingView-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		0E1B4D7618F989C2006F23D4 /* DJWStarRatingViewTests */ = {
@@ -150,6 +137,49 @@
 				0E1B4D7918F989C2006F23D4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37CD768519352297002F9BBF /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				37CD7686193522A4002F9BBF /* Classes */,
+				37CD768B193522A4002F9BBF /* Other Sources */,
+				37CD768E193522A4002F9BBF /* Resources */,
+			);
+			name = Example;
+			sourceTree = "<group>";
+		};
+		37CD7686193522A4002F9BBF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				37CD7687193522A4002F9BBF /* DJWAppDelegate.h */,
+				37CD7688193522A4002F9BBF /* DJWAppDelegate.m */,
+				37CD7689193522A4002F9BBF /* DJWViewController.h */,
+				37CD768A193522A4002F9BBF /* DJWViewController.m */,
+			);
+			name = Classes;
+			path = Example/Classes;
+			sourceTree = "<group>";
+		};
+		37CD768B193522A4002F9BBF /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				37CD768C193522A4002F9BBF /* DJWStarRatingView-Prefix.pch */,
+				37CD768D193522A4002F9BBF /* main.m */,
+			);
+			name = "Other Sources";
+			path = "Example/Other Sources";
+			sourceTree = "<group>";
+		};
+		37CD768E193522A4002F9BBF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				37CD768F193522A4002F9BBF /* DJWStarRatingView-Info.plist */,
+				37CD769619352376002F9BBF /* Main.storyboard */,
+				37CD7690193522A4002F9BBF /* Images.xcassets */,
+			);
+			name = Resources;
+			path = Example/Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +259,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E1B4D6A18F989C2006F23D4 /* Images.xcassets in Resources */,
-				0E1B4D5C18F989C2006F23D4 /* InfoPlist.strings in Resources */,
-				0E1B4D6518F989C2006F23D4 /* Main.storyboard in Resources */,
+				37CD769819352376002F9BBF /* Main.storyboard in Resources */,
+				37CD7694193522A4002F9BBF /* DJWStarRatingView-Info.plist in Resources */,
+				37CD7695193522A4002F9BBF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,9 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E1B4D6818F989C2006F23D4 /* DJWViewController.m in Sources */,
-				0E1B4D6218F989C2006F23D4 /* DJWAppDelegate.m in Sources */,
-				0E1B4D5E18F989C2006F23D4 /* main.m in Sources */,
+				37CD7692193522A4002F9BBF /* DJWViewController.m in Sources */,
+				37CD7691193522A4002F9BBF /* DJWAppDelegate.m in Sources */,
+				37CD7693193522A4002F9BBF /* main.m in Sources */,
+				0E1B4D8818F989E8006F23D4 /* DJWStarRatingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,28 +306,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0E1B4D5A18F989C2006F23D4 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0E1B4D5B18F989C2006F23D4 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		0E1B4D6318F989C2006F23D4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0E1B4D6418F989C2006F23D4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0E1B4D7918F989C2006F23D4 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0E1B4D7A18F989C2006F23D4 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		37CD769619352376002F9BBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37CD769719352376002F9BBF /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -375,11 +398,9 @@
 		0E1B4D8118F989C2006F23D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DJWStarRatingView/DJWStarRatingView-Prefix.pch";
-				INFOPLIST_FILE = "DJWStarRatingView/DJWStarRatingView-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Resources/DJWStarRatingView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -388,11 +409,9 @@
 		0E1B4D8218F989C2006F23D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DJWStarRatingView/DJWStarRatingView-Prefix.pch";
-				INFOPLIST_FILE = "DJWStarRatingView/DJWStarRatingView-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Resources/DJWStarRatingView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -457,6 +476,7 @@
 				0E1B4D8218F989C2006F23D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E1B4D8318F989C2006F23D4 /* Build configuration list for PBXNativeTarget "DJWStarRatingViewTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +485,7 @@
 				0E1B4D8518F989C2006F23D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
