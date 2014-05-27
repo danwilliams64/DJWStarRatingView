@@ -46,6 +46,11 @@
 @property (nonatomic, assign) CGFloat padding;
 
 /**
+ *  If `YES` the user can change the rating by tapping on the view.
+ */
+@property (nonatomic, assign) BOOL editable;
+
+/**
  *  An instance of DJWStarRatingView. The designated initializer for this class.
  *
  *  @param starSize      size of individual star

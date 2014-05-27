@@ -8,6 +8,12 @@
 
 #import "DJWStarRatingView.h"
 
+@interface DJWStarRatingView()
+
+@property (nonatomic, strong) UITapGestureRecognizer *tapGesture;
+
+@end
+
 @implementation DJWStarRatingView
 
 @synthesize padding = _padding;
@@ -29,8 +35,29 @@
         self.backgroundColor = [UIColor clearColor];
         self.frame = CGRectMake(0, 0, self.intrinsicContentSize.width, self.intrinsicContentSize.height);
         [self setNeedsDisplay];
+        _tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(processTap:)];
+        [self addGestureRecognizer:_tapGesture];
     }
     return self;
+}
+
+#pragma mark - Target / Action
+
+- (void)processTap:(UITapGestureRecognizer *)tap
+{
+    CGPoint point = [tap locationInView:self];
+    [self ratingAtPoint:point];
+}
+
+- (float)ratingAtPoint:(CGPoint)point
+{
+    CGFloat x = point.x;
+    CGFloat starWidthWithPadding = _starSize.width + self.padding;
+    
+    CGFloat rating = (x / starWidthWithPadding) + 1;
+    NSLog(@"Rating: %@", @(rating));
+    self.rating = rating;
+    return rating;
 }
 
 #pragma mark - Drawing
