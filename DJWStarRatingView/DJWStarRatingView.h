@@ -51,6 +51,16 @@
 @property (nonatomic, assign) BOOL editable;
 
 /**
+ *  Allow the user to change the rating by tapping, if the view's editable property is `YES`. Defaults to `YES`.
+ */
+@property (nonatomic, assign) BOOL allowsTapWhenEditable;
+
+/**
+ *  Allow the user to change the rating by swiping, if the view's editable property is `YES`. Defaults to `YES`.
+ */
+@property (nonatomic, assign) BOOL allowsSwipeWhenEditable;
+
+/**
  *  An instance of DJWStarRatingView. The designated initializer for this class.
  *
  *  @param starSize      size of individual star

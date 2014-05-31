@@ -10,8 +10,6 @@
 
 @interface DJWStarRatingView()
 
-@property (nonatomic, strong) UITapGestureRecognizer *tapGesture;
-
 @end
 
 @implementation DJWStarRatingView
@@ -32,21 +30,30 @@
         _fillColor = fillColor;
         _strokeColor = strokeColor;
         
+        _allowsSwipeWhenEditable = YES;
+        _allowsTapWhenEditable = YES;
+        
         self.backgroundColor = [UIColor clearColor];
         self.frame = CGRectMake(0, 0, self.intrinsicContentSize.width, self.intrinsicContentSize.height);
         [self setNeedsDisplay];
-        _tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(processTap:)];
-        [self addGestureRecognizer:_tapGesture];
+        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(processGestureRecogniser:)];
+        [self addGestureRecognizer:tapGesture];
+        UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(processGestureRecogniser:)];
+        [self addGestureRecognizer:panGesture];
     }
     return self;
 }
 
 #pragma mark - Target / Action
 
-- (void)processTap:(UITapGestureRecognizer *)tap
+- (void)processGestureRecogniser:(UIGestureRecognizer *)gesture
 {
     if (!self.editable) return;
-    CGPoint point = [tap locationInView:self];
+    
+    if ([gesture isKindOfClass:[UITapGestureRecognizer class]] && !self.allowsTapWhenEditable) return;
+    if ([gesture isKindOfClass:[UIPanGestureRecognizer class]] && !self.allowsSwipeWhenEditable) return;
+    
+    CGPoint point = [gesture locationInView:self];
     self.rating = [self ratingAtPoint:point];
 }
 
