@@ -23,6 +23,7 @@
     DJWStarRatingView *starRatingView = [[DJWStarRatingView alloc] initWithStarSize:CGSizeMake(60, 60) numberOfStars:5 rating:3.5 fillColor:[UIColor whiteColor] strokeColor:[UIColor whiteColor]];
     [self.view addSubview:starRatingView];
     starRatingView.center = self.view.center;
+    starRatingView.editable = YES;
     starRatingView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
 }
 

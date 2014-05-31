@@ -45,8 +45,9 @@
 
 - (void)processTap:(UITapGestureRecognizer *)tap
 {
+    if (!self.editable) return;
     CGPoint point = [tap locationInView:self];
-    [self ratingAtPoint:point];
+    self.rating = [self ratingAtPoint:point];
 }
 
 - (float)ratingAtPoint:(CGPoint)point
@@ -55,8 +56,11 @@
     CGFloat starWidthWithPadding = _starSize.width + self.padding;
     
     CGFloat rating = (x / starWidthWithPadding) + 1;
-    NSLog(@"Rating: %@", @(rating));
-    self.rating = rating;
+    CGFloat fractional = fmodf(rating, 1);
+    fractional = roundf(fractional * 2.0) / 2.0;
+    
+    rating = (int)rating;
+    rating = rating + fractional - 0.5;
     return rating;
 }
 
