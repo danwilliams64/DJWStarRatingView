@@ -21,6 +21,7 @@
                    numberOfStars:(NSInteger)numberOfStars
                           rating:(float)rating
                        fillColor:(UIColor *)fillColor
+                   unfilledColor:(UIColor *)unfilledColor
                      strokeColor:(UIColor *)strokeColor
 {
     if (self = [super initWithFrame:CGRectZero]) {
@@ -28,6 +29,7 @@
         _numberOfStars = numberOfStars;
         _rating = rating;
         _fillColor = fillColor;
+        _unfilledColor = unfilledColor;
         _strokeColor = strokeColor;
         
         _allowsSwipeWhenEditable = YES;
@@ -118,7 +120,7 @@
     CGFloat fillPercentage = [self fillPercentageForStarNumber:starNumber];
     
     UIColor *startColor = self.fillColor;
-    UIColor *endColor = [UIColor clearColor];
+    UIColor *endColor = self.unfilledColor;
     
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();

@@ -19,7 +19,6 @@
 		37CD7691193522A4002F9BBF /* DJWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CD7688193522A4002F9BBF /* DJWAppDelegate.m */; };
 		37CD7692193522A4002F9BBF /* DJWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CD768A193522A4002F9BBF /* DJWViewController.m */; };
 		37CD7693193522A4002F9BBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CD768D193522A4002F9BBF /* main.m */; };
-		37CD7694193522A4002F9BBF /* DJWStarRatingView-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37CD768F193522A4002F9BBF /* DJWStarRatingView-Info.plist */; };
 		37CD7695193522A4002F9BBF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37CD7690193522A4002F9BBF /* Images.xcassets */; };
 		37CD769819352376002F9BBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37CD769619352376002F9BBF /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -260,7 +259,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				37CD769819352376002F9BBF /* Main.storyboard in Resources */,
-				37CD7694193522A4002F9BBF /* DJWStarRatingView-Info.plist in Resources */,
 				37CD7695193522A4002F9BBF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +396,8 @@
 		0E1B4D8118F989C2006F23D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Resources/DJWStarRatingView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -409,6 +409,8 @@
 		0E1B4D8218F989C2006F23D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Resources/DJWStarRatingView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

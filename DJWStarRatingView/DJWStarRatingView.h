@@ -31,6 +31,11 @@
 @property (nonatomic, strong) UIColor *fillColor;
 
 /**
+ *  The unfilled color of the stars.
+ */
+@property (nonatomic, strong) UIColor *unfilledColor;
+
+/**
  *  The color of the star's stroke.
  */
 @property (nonatomic, strong) UIColor *strokeColor;
@@ -75,6 +80,7 @@
                    numberOfStars:(NSInteger)numberOfStars
                           rating:(float)rating
                        fillColor:(UIColor *)fillColor
+                   unfilledColor:(UIColor *)unfilledColor
                      strokeColor:(UIColor *)strokeColor;
 
 @end

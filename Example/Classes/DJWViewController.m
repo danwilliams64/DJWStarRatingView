@@ -20,7 +20,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
     
-    DJWStarRatingView *starRatingView = [[DJWStarRatingView alloc] initWithStarSize:CGSizeMake(60, 60) numberOfStars:5 rating:3.5 fillColor:[UIColor whiteColor] strokeColor:[UIColor whiteColor]];
+    DJWStarRatingView *starRatingView = [[DJWStarRatingView alloc] initWithStarSize:CGSizeMake(60, 60) numberOfStars:5 rating:3.5 fillColor:[UIColor whiteColor] unfilledColor:[UIColor clearColor] strokeColor:[UIColor whiteColor]];
     [self.view addSubview:starRatingView];
     starRatingView.center = self.view.center;
     starRatingView.editable = YES;
