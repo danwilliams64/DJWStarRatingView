@@ -26,3 +26,7 @@ Create a new instance of DJWStarRatingView, utilising the designated initialiser
 ## Installation
 
 Simply add `DJWStarRatingView` to your Podfile if you're using Cocoapods. Alternatively, add `DJWStarRatingView.h` and `DJWStarRatingView.m` to your project. Included in this repository is a demo application, showing the project in action.
+
+## License
+
+DJWStarRatingView is licensed under the [MIT license](https://raw.githubusercontent.com/danwilliams64/DJWStarRatingView/master/LICENSE.md).
