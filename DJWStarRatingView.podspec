@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
                    Properties that are configurable include star size, fill color, unfilled color, stroke, padding and stroke width.
                    DESC
 
-  s.homepage     = "http://github.com/danwilliams64/DJWStarRatingView"
+  s.homepage     = "https://github.com/danwilliams64/DJWStarRatingView"
   s.screenshots  = "https://raw.githubusercontent.com/danwilliams64/DJWStarRatingView/master/Screenshots/DJWStarRatingView.gif"
 
   s.license      = "MIT (example)"
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "http://github.com/danwilliams64/DJWStarRatingView.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/danwilliams64/DJWStarRatingView.git", :tag => "#{s.version}" }
 
   s.source_files  = "DJWStarRatingView"
 
