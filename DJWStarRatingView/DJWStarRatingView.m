@@ -38,12 +38,27 @@
         self.backgroundColor = [UIColor clearColor];
         self.frame = CGRectMake(0, 0, self.intrinsicContentSize.width, self.intrinsicContentSize.height);
         [self setNeedsDisplay];
-        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(processGestureRecogniser:)];
-        [self addGestureRecognizer:tapGesture];
-        UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(processGestureRecogniser:)];
-        [self addGestureRecognizer:panGesture];
+        
+        [self initializeGestureRecognizers];
     }
     return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self initializeGestureRecognizers];
+    }
+    return self;
+}
+
+- (void)initializeGestureRecognizers
+{
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(processGestureRecogniser:)];
+    [self addGestureRecognizer:tapGesture];
+    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(processGestureRecogniser:)];
+    [self addGestureRecognizer:panGesture];
 }
 
 #pragma mark - Target / Action
