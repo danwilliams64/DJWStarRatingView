@@ -66,6 +66,12 @@
 @property (nonatomic, assign) BOOL allowsSwipeWhenEditable;
 
 /**
+ *  Allows ratings at half-integer boundaries aswell as integers. Defaults to `YES`.
+ */
+@property (nonatomic, assign) BOOL allowsHalfIntegralRatings;
+
+
+/**
  *  An instance of DJWStarRatingView. The designated initializer for this class.
  *
  *  @param starSize      size of individual star
