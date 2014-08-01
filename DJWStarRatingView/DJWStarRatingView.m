@@ -34,6 +34,7 @@
         
         _allowsSwipeWhenEditable = YES;
         _allowsTapWhenEditable = YES;
+        _allowsHalfIntegralRatings = YES;
         
         self.backgroundColor = [UIColor clearColor];
         self.frame = CGRectMake(0, 0, self.intrinsicContentSize.width, self.intrinsicContentSize.height);
@@ -82,6 +83,8 @@
     CGFloat rating = (x / starWidthWithPadding) + 1;
     CGFloat fractional = fmodf(rating, 1);
     fractional = roundf(fractional * 2.0) / 2.0;
+    
+    if (!self.allowsHalfIntegralRatings) fractional = 0.5;
     
     rating = (int)rating;
     rating = rating + fractional - 0.5;
