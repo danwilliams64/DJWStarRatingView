@@ -163,7 +163,7 @@
     float star = (float)starNumber + 1;
     if (star <= self.rating) {
         return 1.0;
-    } else if ((float)(star - 0.5) == self.rating) {
+    } else if ((float)(star - 0.5) <= self.rating) {
         return 0.5;
     } else {
         return 0;
