@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "DJWStarRatingView"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "A view that represents a given rating using stars. Uses custom drawing to allow their appearance at any size."
 
   s.description  = <<-DESC
