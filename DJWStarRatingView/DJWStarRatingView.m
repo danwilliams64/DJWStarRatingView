@@ -204,12 +204,14 @@
 {
     _starSize = starSize;
     [self setNeedsDisplay];
+    [self invalidateIntrinsicContentSize];
 }
 
 - (void)setNumberOfStars:(NSInteger)numberOfStars
 {
     _numberOfStars = numberOfStars;
     [self setNeedsDisplay];
+    [self invalidateIntrinsicContentSize];
 }
 
 - (void)setRating:(float)rating
@@ -240,6 +242,7 @@
 {
     _padding = padding;
     [self setNeedsDisplay];
+    [self invalidateIntrinsicContentSize];
 }
 
 @end
