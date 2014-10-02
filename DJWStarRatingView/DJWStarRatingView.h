@@ -8,6 +8,8 @@
 
 @import UIKit;
 
+#define kDJWStarRatingViewChangeNotification @"kDJWStarRatingViewChangeNotification"
+
 @interface DJWStarRatingView : UIView
 
 /**
