@@ -10,29 +10,29 @@
 	<string>DJWStarRatingView</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>2531A948-B9E0-414B-AEA3-3C30D309FB6D</key>
+		<key>09A37E81E2779F3D6604F6191D8167333DDE49BD</key>
 		<string>https://github.com/danwilliams64/DJWStarRatingView.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>DJWStarRatingView.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>2531A948-B9E0-414B-AEA3-3C30D309FB6D</key>
+		<key>09A37E81E2779F3D6604F6191D8167333DDE49BD</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/danwilliams64/DJWStarRatingView.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>2531A948-B9E0-414B-AEA3-3C30D309FB6D</string>
+	<string>09A37E81E2779F3D6604F6191D8167333DDE49BD</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>2531A948-B9E0-414B-AEA3-3C30D309FB6D</string>
+			<string>09A37E81E2779F3D6604F6191D8167333DDE49BD</string>
 			<key>IDESourceControlWCCName</key>
 			<string>DJWStarRatingView</string>
 		</dict>
