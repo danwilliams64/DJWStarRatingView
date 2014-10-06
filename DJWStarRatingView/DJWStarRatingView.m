@@ -88,6 +88,7 @@
     
     rating = (int)rating;
     rating = rating + fractional - 0.5;
+    rating = MAX(1, MIN(rating, self.numberOfStars));
     return rating;
 }
 
