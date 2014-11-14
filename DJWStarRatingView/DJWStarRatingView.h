@@ -8,69 +8,73 @@
 
 @import UIKit;
 
+
 #define kDJWStarRatingViewChangeNotification @"kDJWStarRatingViewChangeNotification"
+
+
+IB_DESIGNABLE
 
 @interface DJWStarRatingView : UIView
 
 /**
  *  The individual size for each star.
  */
-@property (nonatomic, assign) CGSize starSize;
+@property (nonatomic, assign) IBInspectable CGSize starSize;
 
 /**
  *  The total number of stars to show.
  */
-@property (nonatomic, assign) NSInteger numberOfStars;
+@property (nonatomic, assign) IBInspectable NSInteger numberOfStars;
 
 /**
  *  The rating for the view to display. E.g. `3.0` or `4.5`. Fractional component must be either `0` or `5`.
  */
-@property (nonatomic, assign) float rating;
+@property (nonatomic, assign) IBInspectable float rating;
 
 /**
  *  The fill color of the stars.
  */
-@property (nonatomic, strong) UIColor *fillColor;
+@property (nonatomic, strong) IBInspectable UIColor *fillColor;
 
 /**
  *  The unfilled color of the stars.
  */
-@property (nonatomic, strong) UIColor *unfilledColor;
+@property (nonatomic, strong) IBInspectable UIColor *unfilledColor;
 
 /**
  *  The color of the star's stroke.
  */
-@property (nonatomic, strong) UIColor *strokeColor;
+@property (nonatomic, strong) IBInspectable UIColor *strokeColor;
 
 /**
  *  The width of the stroke around the stars. Defaults to `1.0`.
  */
-@property (nonatomic, assign) CGFloat lineWidth;
+@property (nonatomic, assign) IBInspectable CGFloat lineWidth;
 
 /**
  *  The space between each star. Defaults to 5 percent of the width alocated to each star.
  */
-@property (nonatomic, assign) CGFloat padding;
+@property (nonatomic, assign) IBInspectable CGFloat padding;
 
 /**
  *  If `YES` the user can change the rating by tapping on the view.
  */
-@property (nonatomic, assign) BOOL editable;
+@property (nonatomic, assign) IBInspectable BOOL editable;
 
 /**
  *  Allow the user to change the rating by tapping, if the view's editable property is `YES`. Defaults to `YES`.
  */
-@property (nonatomic, assign) BOOL allowsTapWhenEditable;
+@property (nonatomic, assign) IBInspectable BOOL allowsTapWhenEditable;
 
 /**
  *  Allow the user to change the rating by swiping, if the view's editable property is `YES`. Defaults to `YES`.
  */
-@property (nonatomic, assign) BOOL allowsSwipeWhenEditable;
+@property (nonatomic, assign) IBInspectable BOOL allowsSwipeWhenEditable;
 
 /**
  *  Allows ratings at half-integer boundaries aswell as integers. Defaults to `YES`.
  */
-@property (nonatomic, assign) BOOL allowsHalfIntegralRatings;
+@property (nonatomic, assign) IBInspectable BOOL allowsHalfIntegralRatings;
 
 
 /**
