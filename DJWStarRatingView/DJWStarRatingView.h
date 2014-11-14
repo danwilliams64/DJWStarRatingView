@@ -8,7 +8,12 @@
 
 @import UIKit;
 
+
+#define kDJWStarRatingViewChangeNotification @"kDJWStarRatingViewChangeNotification"
+
+
 IB_DESIGNABLE
+
 @interface DJWStarRatingView : UIView
 
 /**

@@ -45,6 +45,17 @@
     return self;
 }
 
+
+- (void)awakeFromNib{
+    
+    _allowsSwipeWhenEditable = YES;
+    _allowsTapWhenEditable = YES;
+    _allowsHalfIntegralRatings = YES;
+        
+    
+}
+
+
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
     self = [super initWithCoder:aDecoder];
@@ -73,6 +84,7 @@
     
     CGPoint point = [gesture locationInView:self];
     self.rating = [self ratingAtPoint:point];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kDJWStarRatingViewChangeNotification object:self];
 }
 
 - (float)ratingAtPoint:(CGPoint)point
