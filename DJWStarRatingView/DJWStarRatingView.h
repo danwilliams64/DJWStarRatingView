@@ -27,6 +27,11 @@ IB_DESIGNABLE
 @property (nonatomic, assign) IBInspectable float rating;
 
 /**
+ *  Block call when rating changes.
+ */
+@property (nonatomic, copy) void (^ratingChanged)(float newValue);
+
+/**
  *  The fill color of the stars.
  */
 @property (nonatomic, strong) IBInspectable UIColor *fillColor;
@@ -70,7 +75,6 @@ IB_DESIGNABLE
  *  Allows ratings at half-integer boundaries aswell as integers. Defaults to `YES`.
  */
 @property (nonatomic, assign) IBInspectable BOOL allowsHalfIntegralRatings;
-
 
 /**
  *  An instance of DJWStarRatingView. The designated initializer for this class.

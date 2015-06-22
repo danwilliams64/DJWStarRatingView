@@ -219,6 +219,11 @@
 {
     _rating = rating;
     [self setNeedsDisplay];
+    
+    if (self.ratingChanged != nil)
+    {
+        self.ratingChanged(self.rating);
+    }
 }
 
 - (void)setFillColor:(UIColor *)fillColor
