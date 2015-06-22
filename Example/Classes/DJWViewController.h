@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DJWViewController : UIViewController
+#import "DJWStarRatingView.h"
+
+@interface DJWViewController : UIViewController<DJWStarRatingViewDelegate>
 
 @end

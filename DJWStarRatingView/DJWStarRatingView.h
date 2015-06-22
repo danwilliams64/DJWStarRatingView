@@ -8,6 +8,8 @@
 
 @import UIKit;
 
+@protocol DJWStarRatingViewDelegate;
+
 IB_DESIGNABLE
 @interface DJWStarRatingView : UIView
 
@@ -71,6 +73,10 @@ IB_DESIGNABLE
  */
 @property (nonatomic, assign) IBInspectable BOOL allowsHalfIntegralRatings;
 
+/**
+ *  Delegate
+ */
+@property (nonatomic, assign) IBOutlet id <DJWStarRatingViewDelegate> delegate;
 
 /**
  *  An instance of DJWStarRatingView. The designated initializer for this class.
@@ -89,5 +95,11 @@ IB_DESIGNABLE
                        fillColor:(UIColor *)fillColor
                    unfilledColor:(UIColor *)unfilledColor
                      strokeColor:(UIColor *)strokeColor;
+
+@end
+
+@protocol DJWStarRatingViewDelegate <NSObject>
+
+- (void)djwStarRatingChangedValue:(DJWStarRatingView *)view;
 
 @end
