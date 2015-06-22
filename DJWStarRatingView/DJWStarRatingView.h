@@ -76,7 +76,7 @@ IB_DESIGNABLE
 /**
  *  Delegate
  */
-@property (nonatomic, assign) id <DJWStarRatingViewDelegate> delegate;
+@property (nonatomic, assign) IBInspectable id <DJWStarRatingViewDelegate> delegate;
 
 /**
  *  An instance of DJWStarRatingView. The designated initializer for this class.
