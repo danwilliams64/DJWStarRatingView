@@ -224,6 +224,11 @@
     {
         self.ratingChanged(self.rating);
     }
+
+    if (self.delegate != nil && [self.delegate respondsToSelector:@selector(djwStarRatingChangedValue:) ] )
+    {
+        [self.delegate djwStarRatingChangedValue:self];
+    }
 }
 
 - (void)setFillColor:(UIColor *)fillColor
