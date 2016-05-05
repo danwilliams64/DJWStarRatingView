@@ -220,6 +220,11 @@
     _rating = rating;
     [self setNeedsDisplay];
     
+    if (self.ratingChanged != nil)
+    {
+        self.ratingChanged(self.rating);
+    }
+
     if (self.delegate != nil && [self.delegate respondsToSelector:@selector(djwStarRatingChangedValue:) ] )
     {
         [self.delegate djwStarRatingChangedValue:self];

@@ -10,7 +10,7 @@
 
 @interface DJWViewController ()
 
-@property (nonatomic, assign) UILabel *starRatingValue;
+@property (nonatomic, assign) UILabel *starRatingValueFromDelegate;
 
 @end
 
@@ -26,19 +26,31 @@
     anotherStarRatingView.center = self.view.center;
     anotherStarRatingView.editable = YES;
     anotherStarRatingView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
+    
+    
+    UILabel *starRatingValueFromBlock = [[UILabel alloc] initWithFrame:CGRectMake(self.view.bounds.size.width / 2 - 310 / 2, self.view.bounds.size.height / 2 + 20, 310, 40) ];
+    [self.view addSubview:starRatingValueFromBlock];
+    starRatingValueFromBlock.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
+    starRatingValueFromBlock.textColor = [UIColor whiteColor];
+    starRatingValueFromBlock.textAlignment = NSTextAlignmentCenter;
+    
+    anotherStarRatingView.ratingChanged = ^(float newValue) {
+        starRatingValueFromBlock.text = [NSString stringWithFormat:@"Block: Value updated to %.1f", newValue];
+    };
+
     anotherStarRatingView.delegate = self;
     
-    UILabel *starRatingValue = [[UILabel alloc] initWithFrame:CGRectMake(self.view.bounds.size.width / 2 - 100, self.view.bounds.size.height / 2 + 20, 200, 40) ];
-    [self.view addSubview:starRatingValue];
-    starRatingValue.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
-    self.starRatingValue = starRatingValue;
-    self.starRatingValue.textColor = [UIColor whiteColor];
-    self.starRatingValue.textAlignment = NSTextAlignmentCenter;
+    UILabel *starRatingValueFromDelegate = [[UILabel alloc] initWithFrame:CGRectMake(self.view.bounds.size.width / 2 - 310 / 2, self.view.bounds.size.height / 2 + 40, 310, 40) ];
+    [self.view addSubview:starRatingValueFromDelegate];
+    starRatingValueFromDelegate.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
+    self.starRatingValueFromDelegate = starRatingValueFromDelegate;
+    self.starRatingValueFromDelegate.textColor = [UIColor whiteColor];
+    self.starRatingValueFromDelegate.textAlignment = NSTextAlignmentCenter;
 }
 
 - (void)djwStarRatingChangedValue:(DJWStarRatingView *)view
 {
-    self.starRatingValue.text = [NSString stringWithFormat:@"Value updated to %.1f", view.rating];
+    self.starRatingValueFromDelegate.text = [NSString stringWithFormat:@"Delegate: Value updated to %.1f", view.rating];
 }
 
 @end

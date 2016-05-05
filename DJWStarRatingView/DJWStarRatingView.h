@@ -29,6 +29,11 @@ IB_DESIGNABLE
 @property (nonatomic, assign) IBInspectable float rating;
 
 /**
+ *  Block call when rating changes.
+ */
+@property (nonatomic, copy) void (^ratingChanged)(float newValue);
+
+/**
  *  The fill color of the stars.
  */
 @property (nonatomic, strong) IBInspectable UIColor *fillColor;
@@ -77,7 +82,6 @@ IB_DESIGNABLE
  *  Delegate
  */
 @property (nonatomic, assign) IBOutlet id <DJWStarRatingViewDelegate> delegate;
-
 /**
  *  An instance of DJWStarRatingView. The designated initializer for this class.
  *
